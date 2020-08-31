@@ -1,0 +1,20 @@
+app:
+  name: My app
+  description: Welcome to ${app.name}
+us:
+  uri: ${HOME}
+my:
+  greetings: Hello World
+  list:
+    values: One,Two,Three
+
+  
+management.endpoints.web.exposure.include: "*"
+
+spring:
+  cloud:
+    config:
+      uri:
+      -  http://localhost:8999
+  application:
+    name: spring-boot-config-client

@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri:
+      -  http://localhost:8999
+      username: madhav
+      password: madhav
+  application:
+    name: spring-boot-config-client 
